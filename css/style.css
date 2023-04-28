@@ -1,0 +1,571 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+ul , ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000 !important;
+}
+
+
+/* ---------------------------------------------------
+    TOPBAR STYLE
+----------------------------------------------------- */
+
+
+
+.top_bar{
+    background: #FFFFFF;
+    transition: all 0.5s;
+    z-index: 997;
+    background: #fff;
+    box-shadow: 0 5px 5px -5px #333;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.top_bar .logo img {
+    height: 75px;
+    width: 75px;
+    margin-left: 6px;
+}
+.top_bar .social {
+    display: flex;
+    justify-content: space-between;
+}
+.top_bar .social .icon {
+    background-color: #fff;
+    border: solid 1px #000;
+    border-radius: 5px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+
+}
+.top_bar .social .icon:hover {
+    background-color: #FFCC4D;
+}
+.top_bar .flag_drop_down{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+.top_bar .navbar-nav .nav-item .nav-link{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #000000;
+margin-right: 20px;
+
+}
+.top_bar .navbar-nav .nav-item .nav-link:hover{
+color: #FFCC4D !important;
+}
+
+
+
+/* ---------------------------------------------------
+   NOTIFICATION DROPDOWN STYLE
+----------------------------------------------------- */
+
+.bell_drop_down .dropdown-toggle::after {
+  display: none;
+}
+ .bell_drop_down{
+    position: relative;
+}
+ .bell_drop_down  .dropdown-menu[data-bs-popper] {
+    position: absolute;
+width: 310px;
+    top: 77px;
+    left: -279px;
+    margin-top: 0.125rem;
+    background: #ffffff !important;
+    padding: 25px;
+} 
+.bell_drop_down  .dropdown-menu li{
+    display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+ .bell_drop_down  .dropdown-menu .see_more_btn{
+    display: flex;
+      justify-content: center;
+}
+ .bell_drop_down  .dropdown-menu .see_more_btn a{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+color: #6F57EB !important;
+text-shadow: 0px 2px 8px rgba(111, 87, 235, 0.15);
+}
+
+.bell_drop_down  .dropdown-menu li .left_notification{
+    width: 25%;
+    text-align: center;
+}
+ .bell_drop_down  .dropdown-menu li .left_notification p{
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 11px;
+text-align: center;
+color: #646464;
+}
+.bell_drop_down  .dropdown-menu li .content p{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+color: #646464;
+padding-left: 20px;
+}
+ .bell_drop_down  .dropdown-menu li .content p a{
+    color: #6F57EB !important;
+}
+.top_bar .dropdown .user_dropdown{
+background: #FFFFFF;
+box-shadow: 0px 2px 8px rgba(111, 87, 235, 0.2);
+position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate(-117px, 91px) !important; 
+    padding: 15px;
+    min-width: 211px;
+}
+.top_bar .dropdown .user_dropdown .user_edit p{
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+color: #000000;
+}
+.top_bar .dropdown .user_dropdown .user_edit a{
+    margin-left: 15px !important;
+}
+.top_bar .dropdown .user_dropdown .user_name{
+    margin-top: 10px;
+}
+.top_bar .dropdown .user_dropdown .user_name a{
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 300 !important;
+font-size: 20px;
+color: #6F57EB !important;
+margin-top: 20px !important;
+}
+.top_bar .dropdown .user_dropdown .bottom_li{
+    margin-top: 10px;
+}
+.top_bar .dropdown .user_dropdown .bottom_li a{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+color: #000000;
+margin-top: 20px !important;
+}
+
+.switcher .switcher_container{
+    background: #EDEDED;
+border-radius: 20px;
+width: 50%;
+margin-top: 20px;
+display: flex;
+justify-content: space-around;
+}
+
+.switcher .switcher_container a{
+    padding: 0px 15px;
+}
+.switcher .switcher_container .active{
+    background-color: #fff;
+  
+    border-radius: 20px;
+}
+
+
+
+
+
+/* ---------------------------------------------------
+Mobile Menu Style
+----------------------------------------------------- */
+
+#mobile_menu{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+ .mobile_div{
+    position: relative;
+ }
+
+ .mobile_div .mobile_ul {
+    position: absolute;
+    top: 70px;
+    right: 5px;
+    background: #FFFFFF;
+    padding: 30px;
+    box-shadow: 0px 2px 8px rgba(111, 87, 235, 0.2);
+    min-width: 300px;
+    text-align: center;
+    transition: 0.5s linear all;
+   
+ }
+ .mobile_div .mobile_ul.hide{
+    display: none;
+ }
+ .mobile_div .mobile_ul.show{
+    display: block;
+ }
+ .mobile_div .mobile_ul li{
+    margin-bottom: 15px;
+ }
+ .mobile_div .mobile_ul li a {
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 32px;
+text-align: center;
+color: #646464 !important;
+ }
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    min-width: 310px;
+    max-width: 310px;
+    background: #fff;
+    color: #000;
+    transition: all 0.3s;
+    /* padding: 10px 20px 20px 20px; */
+}
+
+.sidebar-header p{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+color: #161616;
+margin-bottom: 20px !important;
+} 
+.sidebar-header a{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 130%;
+color: #6F57EB !important;
+margin-bottom: 20px;
+} 
+
+#sidebar{
+    position: relative;
+}
+#sidebarCollapse{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    top: 30%;
+}
+
+
+.sidebar .badge_m{
+    background-color: #6F57EB;
+    color: #fff !important;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+.sidebar-header .user_content {
+    margin-left: 20px;
+}
+
+.sidebar{
+    margin-top: 0px;
+}
+
+ .sidebar .navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.sidebar .line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+
+.sidebar .wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #fff;
+}
+
+.sidebar_ul {
+    padding: 20px;
+}
+
+.sidebar_ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sidebar_ul li a{
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+color: #000000;
+margin-left: 20px;
+
+}
+
+
+
+
+
+
+#content{
+
+    width: calc(100% -  310px);
+    background: #F5F5F5;
+    padding-top: 20px;
+}
+
+
+.profile_page .header{
+ padding: 10px;
+background: #FFFFFF;
+border-radius: 30px;
+}
+
+.profile_page .header .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_page .header .content p{
+    margin-bottom: 0px;
+    margin-left: 25px;
+}
+
+
+/* file upload  start */
+
+.file {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.file > input[type='file'] {
+    display: none;
+}
+.file > label {
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    outline: 0;
+    user-select: none;
+    background-color: #fff;
+    color: #4a4a4a;
+}
+
+
+
+.profile_page .form_content{
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 30px 90px;
+    margin-top: 15px;
+}
+
+
+/* global input field */
+.input_field{
+width: 100%;
+border: none;
+padding: 10px;
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 25px;
+color: #646464;
+border-bottom: 1px solid #646464;
+}
+
+
+
+
+
+/* file upload  end*/
+
+
+/* ---------------------------------------------------
+    Media Query 
+----------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+    Media Query  1300
+----------------------------------------------------- */
+
+@media(max-width:1350px){
+
+    .top_bar .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    }
+}
+
+
+
+
+
+@media(max-width:1200px){
+
+    .bell_drop_down .dropdown-toggle::after {
+  display: none;
+}
+ .bell_drop_down{
+    position: relative;
+}
+ .bell_drop_down  .dropdown-menu {
+    position: absolute !important;
+    width: 280px !important;
+    top: 38px !important;
+    left: 0px !important;
+    margin-top: 0.125rem !important;
+    background: #ffffff !important;
+    padding: 25px !important;
+} 
+.bell_drop_down  .dropdown-menu li{
+    display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+ .bell_drop_down  .dropdown-menu .see_more_btn{
+    display: flex;
+      justify-content: center;
+}
+ .bell_drop_down  .dropdown-menu .see_more_btn a{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+color: #6F57EB !important;
+text-shadow: 0px 2px 8px rgba(111, 87, 235, 0.15);
+}
+
+.bell_drop_down  .dropdown-menu li .left_notification{
+    width: 25%;
+    text-align: center;
+}
+ .bell_drop_down  .dropdown-menu li .left_notification p{
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 11px;
+text-align: center;
+color: #646464;
+}
+.bell_drop_down  .dropdown-menu li .content p{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 18px;
+color: #646464;
+padding-left: 20px;
+}
+ .bell_drop_down  .dropdown-menu li .content p a{
+    color: #6F57EB !important;
+}
+.top_bar .dropdown .user_dropdown{
+background: #FFFFFF;
+box-shadow: 0px 2px 8px rgba(111, 87, 235, 0.2);
+position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    padding: 15px;
+    min-width: 211px;
+}
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+
+    
+
+
+
+}

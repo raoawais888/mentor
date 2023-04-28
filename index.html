@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- google font link  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- navbar start  -->
+  
+<div class="top_bar">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-4">
+                <a href="" class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            </div>
+            <div class="col-xl-3 col-lg-5 col-md-5 col-4 col-sm-4">
+                <div class="social">
+                    <a href="" class="icon d-none d-md-block">
+                        <img src="./images/fb.png" alt="">
+                    </a>
+                    <a href="" class="icon d-none d-md-block">
+                        <img src="./images/skype.png" alt="">
+                    </a>
+                    <a href="" class="icon d-none d-md-block">
+                        <img src="./images/link.png" alt="">
+                    </a>
+                    
+                        <img src="./images/line.png" alt="" class=" d-none d-md-block">
+                   
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle flag_drop_down" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./images/US.png" alt="">  US
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">  <img src="./images/US.png" alt="">  US</a></li>
+                          <li><a class="dropdown-item" href="#">  <img src="./images/US.png" alt="">  US</a></li>
+                          <li><a class="dropdown-item" href="#">  <img src="./images/US.png" alt="">  US</a></li>
+                          
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6  d-none d-xl-block">
+          
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Bookmarks</a>
+                      </li>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                   
+                      <li class="nav-item dropdown bell_drop_down">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <img src="./images/notifications.png" alt="">
+                             
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                          <li> 
+                            
+                            <div class="left_notification"> 
+                                <img src="./images/online.png" alt=""> 
+                                 <p>1m ago </p>      
+                            </div>   
+                               <div class="content">
+                                <p>
+                                    Congratulations! You have received an order.
+                                </p>
+                               </div>                        
+                        </li>
+
+                          <li> 
+                            
+                            <div class="left_notification"> 
+                                <img src="./images/online.png" alt=""> 
+                                 <p>1m ago </p>      
+                            </div>   
+                               <div class="content">
+                                <p>
+                                    User <a href=""> Michael </a> sent you a message. Answer it soon
+                                </p>
+                               </div>                        
+                        </li>
+
+                          <li> 
+                            
+                            <div class="left_notification"> 
+                                <img src="./images/online.png" alt=""> 
+                                 <p>1m ago </p>      
+                            </div>   
+                               <div class="content">
+                                <p>
+                                    Congratulations! You have received an order.
+                                </p>
+                               </div>                        
+                        </li>
+
+                            <!-- see more button  start -->
+                            <li class="see_more_btn">
+                                <a href="">See more</a>
+                            </li>
+    
+                            <!-- see more btn end -->
+
+                        </ul>
+                      </li>
+
+                          
+                  
+
+                    </ul>
+                  
+                 
+              </nav>
+        </div>
+
+
+        <div class="col-xl-1 col-md-3 d-md-block d-none">
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                 <img src="./images/photo.png" alt="">
+                </a>
+              
+                <ul class="dropdown-menu user_dropdown" aria-labelledby="dropdownMenuLink">
+        
+                 <li class="d-flex align-items-center user_edit">
+                     <p class="mb-0">Alice Peterson</p> 
+                    <a href="#" class="ml-2"><img src="./images/edit.png" alt=""></a>
+                </li>
+                  <li class="user_name"><a href="#">User | Mentor</a></li>
+
+
+
+                  <li class="bottom_li"><a href="#">Settings</a></li>
+                  <li class="bottom_li"><a href="#">Log out</a></li>
+
+                <li class="switcher">
+                      <div class="switcher_container">
+                       <a href="" class="sun active"> <img src="./images/sun.png" alt="" > </a>
+                       <a href="" class="moon"> <img src="./images/moon.png" alt="" > </a>
+                      </div>
+                </li>
+
+                </ul>
+              </div>
+        </div>
+
+
+
+          <!-- menu on mobile  start -->
+
+        <div class="col-md-2 col-4 col-sm-6 col-4 d-block d-xl-none mobile_div">  
+
+          <!-- notification in mobile  -->
+          <div class="mobile_right d-flex align-items-center justify-content-end">
+         
+
+          <ul class="navbar-nav ml-auto mb-lg-0">
+            <li class="nav-item dropdown bell_drop_down">
+                <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <img src="./images/notifications.png" alt="">
+                     
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <li> 
+                    
+                    <div class="left_notification"> 
+                        <img src="./images/online.png" alt=""> 
+                         <p>1m ago </p>      
+                    </div>   
+                       <div class="content">
+                        <p>
+                            Congratulations! You have received an order.
+                        </p>
+                       </div>                        
+                </li>
+
+                  <li> 
+                    
+                    <div class="left_notification"> 
+                        <img src="./images/online.png" alt=""> 
+                         <p>1m ago </p>      
+                    </div>   
+                       <div class="content">
+                        <p>
+                            User <a href=""> Michael </a> sent you a message. Answer it soon
+                        </p>
+                       </div>                        
+                </li>
+
+                  <li> 
+                    
+                    <div class="left_notification"> 
+                        <img src="./images/online.png" alt=""> 
+                         <p>1m ago </p>      
+                    </div>   
+                       <div class="content">
+                        <p>
+                            Congratulations! You have received an order.
+                        </p>
+                       </div>                        
+                </li>
+
+                    <!-- see more button  start -->
+                    <li class="see_more_btn">
+                        <a href="">See more</a>
+                    </li>
+
+                    <!-- see more btn end -->
+
+                </ul>
+              </li>
+
+
+            </ul>
+
+<!-- notification in mobile  end-->
+
+          <button id="mobile_menu">
+            <img src="./images/menu.png" alt=""></a>
+        </button>
+
+           
+    </div>
+                <ul class="mobile_ul hide">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Bookmarks</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href=""> Help</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Log in</a></li>
+                    <li><a href="">Sign Up</a></li>
+
+                </ul>
+
+        </div>
+         <!-- menu mobile end  -->
+
+    </div>
+</div>
+
+</div>
+<!-- navbar end -->
+
+
+
+
+  <aside class="sidebar">
+    <div class="wrapper">
+        
+        <nav id="sidebar">
+
+       
+          <button type="button" id="sidebarCollapse">
+            <img src="./images/icon.png" alt="" >
+        </button>
+
+            <div class="sidebar-header d-flex">
+                <div class="user_img">
+                    <img src="./images/photo.png" alt="">
+                </div>
+             
+              <div class="user_content d-flex flex-column">
+                <p class="m-0">Alice Peterson</p>
+                <a href="">User | Mentor</a>
+                <a href="">2,000 <span class="badge_m"> M</span> </a>
+              </div> 
+            </div>
+
+
+            <!-- menu section start  -->
+            <ul class="sidebar_ul">
+                <li> <img src="./images/user.png" alt=""> <a href="#">My profile</a> </li>
+                <li> <img src="./images/chat.png" alt=""> <a href="#">Chat</a> </li>
+                <li> <img src="./images/Bookmarks.png" alt=""> <a href="#">Bookmarks</a> </li>
+                <li> <img src="./images/history.png" alt=""> <a href="#">History</a> </li>
+                <li> <img src="./images/file.png" alt=""> <a href="#">My Files</a> </li>
+                <li> <img src="./images/resume.png" alt=""> <a href="#">My resume</a> </li>
+                <li> <img src="./images/meeting.png" alt=""> <a href="#">Meetings</a> </li>
+                <li> <img src="./images/services.png" alt=""> <a href="#">My services</a> </li>
+                <li> <img src="./images/ticket.png" alt=""> <a href="#">My Tickets</a> </li>
+                <li> <img src="./images/payment.png" alt=""> <a href="#">Transactions</a> </li>
+                <li> <img src="./images/setting.png" alt=""> <a href="#">Settings</a> </li>
+                <li> <img src="./images/payment.png" alt=""> <a href="#">Transactions</a> </li>
+                <li> <img src="./images/logout.png" alt=""> <a href="#">Log out</a> </li>
+            </ul>
+            <!-- menu section elnd  -->
+
+             
+
+
+
+            
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+           <div class="container profile_page">
+            <div class="row">
+              <div class="col-md-8 mx-auto">
+                 <div class="header">
+                  <div class="content">
+                    <div class='file file--upload'>
+                      <label for='input-file'>
+                         <img src="./images/image.png" alt="">
+                      </label>
+                      <input id='input-file' type='file' />
+                    </div>
+                    <p>You can upload a profile photo</p>
+                  </div>
+                  
+                </div>
+
+                  <div class="form_content">
+                    <form action="">
+                      <h2 class="text-center">Profile</h2>
+
+                        <div class="form-group">
+                          <input type="text" placeholder="First name" class="input_field">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" placeholder="Last name" class="input_field">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" placeholder="Number" class="input_field">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" placeholder="Email" class="input_field">
+                        </div>
+                        <div class="form-group">
+                         <select name="" id="" class="input_field">
+                          <option value="">Select language</option>
+                         </select>
+                        </div>
+
+
+                         <div class="form-group">
+                          <textarea name="" class="form-control" id="" ></textarea>
+                         </div>
+
+
+
+                      
+
+                  </form>
+                  </div>
+
+
+              </div>
+            </div>
+           </div>
+           
+        </div>
+
+        <!-- page content end -->
+  </aside> 
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+$(document).ready(function () {
+
+             $("#mobile_menu").on("click",function(){
+
+                if($(".mobile_ul").hasClass("show")){
+                    $(this).closest(".mobile_div").find(".mobile_ul").removeClass("show")
+                $(this).closest(".mobile_div").find(".mobile_ul").addClass("hide")
+                }else{
+                 $(this).closest(".mobile_div").find(".mobile_ul").removeClass("hide")
+                $(this).closest(".mobile_div").find(".mobile_ul").addClass("show")
+                }
+               
+               
+                 
+
+             })
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
