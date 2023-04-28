@@ -796,6 +796,148 @@ color: #161616;
 /* waqar css end here */
 
 
+
+   /* User Profile Page style  start */
+
+   .form_content{
+    position: relative;
+    margin-top: 50px;
+   }
+   .user_profile_image{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+   }
+   .user_edit_img{    
+       position: absolute;
+       right: 30px;
+       top: 30px;
+   }
+   .user_data{
+    margin-top: 50px;
+   }
+
+   .user_data .left_data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .user_data .left_data p{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 0px;
+
+   }
+   .user_data .left_data a{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 130%;
+    color: #6F57EB !important;
+    margin-left: 20px;
+    
+   }
+   .user_data .right_data{
+    font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+   }
+   .user_data .right_data button{
+    width: 257px;
+    height: 43px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(111, 87, 235, 0.15);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+   }
+
+  .user_number{
+    margin-top: 50px;
+  }
+   .user_number p{
+    margin-bottom: 0px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #000000;
+    width: 30%;
+   }
+
+   .user_number span{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 25px;
+    color: #000000;
+    margin-left: 20px;
+   }
+   .user_number a span{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 25px;    
+    color: #6F57EB;
+    margin-left: 20px;
+   }
+ 
+   .user_number .left_data{
+    width: 80%;
+   }
+
+
+
+   .user_about .about_heading {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 60px;
+   }
+   .user_about .text {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+   }
+
+   .user_card{
+    margin-top: 30px;
+   }
+
+   .mentor_card .form_content {
+    padding: 0px !important;
+   }
+
+
+   .mentor_card .mentor_header , .wrapper_mentor{
+
+    padding: 30px 90px;
+ 
+
+   /* User Profile Page style  end */
+
+   }
+
+
 /* ---------------------------------------------------
     Media Query 
 ----------------------------------------------------- */
@@ -887,6 +1029,26 @@ position: absolute;
     min-width: 211px;
 }
 
+.user_data .left_data p{
+    font-size: 18px;
+
+}
+.user_data .left_data a{
+    font-size: 14px;
+}
+
+.user_data .right_data button {
+    width: 182px;
+    height: 43px;
+    font-size: 18px;
+
+}
+.user_form_content{
+    padding: 20px !important;
+}
+.user_number p , .user_number span , .user_number a span , .user_about .about_heading , .user_about .text{
+    font-size: 18px;
+}
 }
 
 
@@ -957,6 +1119,7 @@ position: absolute;
     .file .bottom_label{
         background: #FFCC4D; 
     }
+
     .pro-name h2 {
         font-family: 'Ubuntu';
         font-style: normal;
@@ -986,5 +1149,24 @@ position: absolute;
     }
     .ser-name h2{
         padding-top: 0px;
+
+
+    .user_data .user_detail{
+        flex-direction: column;
+    }
+    .user_data .user_detail .right_data{
+        margin-top: 20px;
+    }
+
+
+    .user_number p , .user_number span , .user_number a span , .user_about .about_heading , .user_about .text{
+        font-size: 16px;
+    }
+    .user_number .left_data {
+        width: 90%;
+    }
+    .user_form_content{
+        padding: 10px !important;
+
     }
 }
