@@ -286,17 +286,153 @@
 <!-- navbar end -->
 
 
+<!--   sidebar topbar for mobile dashboard  end--> 
+  
+<div class="top_bar mobile_dashboard_top">
+  <div class="container-fluid">
+      <div class="row align-items-center">
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-4">
+              <a href="" class="logo">
+              <img src="./images/logo.png" alt="logo">
+          </a>
+          </div>
+          <div class="col-xl-3 col-lg-5 col-md-5 col-4 col-sm-4">
+              <div class="social">
+                  <div class="btn-group">
+                      <button type="button" class="dropdown-toggle flag_drop_down" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/US.png" alt="">  US
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">  <img src="./images/US.png" alt="">  US</a></li>
+                        <li><a class="dropdown-item" href="#">  <img src="./images/US.png" alt="">  US</a></li>
+                        <li><a class="dropdown-item" href="#">  <img src="./images/US.png" alt="">  US</a></li>
+                        
+                      </ul>
+              </div>
+          </div>
+      </div>
+
+
+     
+
+
+
+
+
+        <!-- menu on mobile  start -->
+
+      <div class="col-md-2 col-4 col-sm-6 col-4 d-block d-xl-none mobile_div">  
+
+        <!-- notification in mobile  -->
+        <div class="mobile_right d-flex align-items-center justify-content-end">
+       
+
+        <ul class="navbar-nav ml-auto mb-lg-0">
+          <li class="nav-item dropdown bell_drop_down">
+              <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <img src="./images/notifications.png" alt="">
+                   
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <li> 
+                  
+                  <div class="left_notification"> 
+                      <img src="./images/online.png" alt=""> 
+                       <p>1m ago </p>      
+                  </div>   
+                     <div class="content">
+                      <p>
+                          Congratulations! You have received an order.
+                      </p>
+                     </div>                        
+              </li>
+
+                <li> 
+                  
+                  <div class="left_notification"> 
+                      <img src="./images/online.png" alt=""> 
+                       <p>1m ago </p>      
+                  </div>   
+                     <div class="content">
+                      <p>
+                          User <a href=""> Michael </a> sent you a message. Answer it soon
+                      </p>
+                     </div>                        
+              </li>
+
+                <li> 
+                  
+                  <div class="left_notification"> 
+                      <img src="./images/online.png" alt=""> 
+                       <p>1m ago </p>      
+                  </div>   
+                     <div class="content">
+                      <p>
+                          Congratulations! You have received an order.
+                      </p>
+                     </div>                        
+              </li>
+
+                  <!-- see more button  start -->
+                  <li class="see_more_btn">
+                      <a href="">See more</a>
+                  </li>
+
+                  <!-- see more btn end -->
+
+              </ul>
+            </li>
+
+
+          </ul>
+
+<!-- notification in mobile  end-->
+
+        <button id="mobile_menu" class="small_collaapse">
+          <img src="./images/menu.png" alt=""></a>
+      </button>
+
+         
+  </div>
+              <ul class="mobile_ul hide">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Bookmarks</a></li>
+                  <li><a href="">Contacts</a></li>
+                  <li><a href=""> Help</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Log in</a></li>
+                  <li><a href="">Sign Up</a></li>
+
+              </ul>
+
+      </div>
+       <!-- menu mobile end  -->
+
+  </div>
+</div>
+
+</div>
+<!--   sidebar topbar for mobile dashboard  end--> 
+
+
+
+
+
+
 
 
   <aside class="sidebar">
     <div class="wrapper">
         
+            
+
         <nav id="sidebar">
 
        
-          <button type="button" id="sidebarCollapse">
+          <button type="button" class="d-none d-md-block" id="sidebarCollapse">
             <img src="./images/icon.png" alt="" >
-        </button>
+          </button>
 
             <div class="sidebar-header d-flex">
                 <div class="user_img">
@@ -341,7 +477,7 @@
 
            <div class="container profile_page">
             <div class="row">
-              <div class="col-md-8 mx-auto">
+              <div class="col-lg-8 mx-auto">
                  <div class="header">
                   <div class="content">
                     <div class='file file--upload'>
@@ -371,6 +507,21 @@
                         <div class="form-group">
                           <input type="text" placeholder="Email" class="input_field">
                         </div>
+
+
+                        <div class="form-group radio_section">
+                          <div class="label">
+                            Gender
+                          </div>
+                          <div class="radio_div">
+                            <input type="radio" name="gender"> Male &nbsp;
+                            <input type="radio" name="gender"> Female &nbsp;
+                            <input type="radio" name="gender"> Other
+                          </div>
+                        
+                        </div>
+
+
                         <div class="form-group">
                          <select name="" id="" class="input_field">
                           <option value="">Select language</option>
@@ -379,10 +530,39 @@
 
 
                          <div class="form-group">
-                          <textarea name="" class="form-control" id="" ></textarea>
+                          <textarea name="" class="form-control custom_textarea" id="" >Description</textarea>
                          </div>
 
 
+                         <!-- image drag drop  -->
+
+                           <div class="drop_file d-flex align-items-center">
+                            <div class='file file--upload pin_file'>
+                              <label for='input-file' class="bottom_label">
+                                 <img src="./images/file_upload.png" alt="">
+                              </label>
+                              <input id='input-file' type='file' />
+                            </div>
+
+
+                            <div class="drop_input">
+                              <div id="dropFiles" class="dropFiles">
+                                Drag and drop File Here.
+                              </div>
+                              
+                              <!-- image name show  -->
+                              <div id="messages">
+                              </div>
+                              
+                            </div>
+                           </div>      
+                      
+                         <!-- image drag drop  -->
+                    
+
+                    <div class="btn_cont w-100 text-center">
+                        <button> Continue</button>
+                    </div>
 
                       
 
@@ -428,8 +608,53 @@ $(document).ready(function () {
 
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('active');
+            });
+
+            $('.small_collaapse').on('click', function () {
+                $('#sidebar').toggleClass('mobile-active');
+                $('#content').toggleClass('mobile_content');
             });
         });
+
+
+    $(document).ready(function(){
+  $("#dropFiles").on('dragenter', function(ev) {
+      // Entering drop area. Highlight area
+      $("#dropFiles").addClass("highlightDropArea");
+  });
+  
+  $("#dropFiles").on('dragleave', function(ev) {
+    // Going out of drop area. Remove Highlight
+    $("#dropFiles").removeClass("highlightDropArea");
+  });
+  
+  $("#dropFiles").on('drop', function(ev) {
+    // Dropping files
+    ev.preventDefault();
+    ev.stopPropagation();
+    // Clear previous messages
+    $("#messages").empty();
+    if(ev.originalEvent.dataTransfer){
+      if(ev.originalEvent.dataTransfer.files.length) {
+        var droppedFiles = ev.originalEvent.dataTransfer.files;
+        for(var i = 0; i < droppedFiles.length; i++)
+        {
+          console.log(droppedFiles[i]);
+          $("#messages").append("<br /> <b>Dropped File </b>"+ droppedFiles[i].name);
+          // Upload droppedFiles[i] to server
+        }
+      }
+    }
+
+    $("#dropFiles").removeClass("highlightDropArea");
+    return false;
+  });
+  
+  $("#dropFiles").on('dragover', function(ev) {
+      ev.preventDefault();
+  });
+})
     </script>
 </body>
 </html>
