@@ -238,6 +238,7 @@ Mobile Menu Style
     min-width: 300px;
     text-align: center;
     transition: 0.5s linear all;
+    z-index: 9999;
    
  }
  .mobile_div .mobile_ul.hide{
@@ -269,6 +270,9 @@ color: #646464 !important;
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+.mobile_dashboard_top{
+    display: none;
+}
 
 #sidebar {
     min-width: 310px;
@@ -304,8 +308,14 @@ margin-bottom: 20px;
 #sidebarCollapse{
     position: absolute;
     top: 0;
-    left: 100%;
-    top: 30%;
+    left: 96%;
+    top: 50%;
+    background: transparent;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 6px 12px;
 }
 
 
@@ -347,7 +357,7 @@ margin-bottom: 20px;
 
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: -310px;
 }
 
 #sidebar .sidebar-header {
@@ -386,6 +396,9 @@ margin-left: 20px;
     background: #F5F5F5;
     padding-top: 20px;
 }
+#content.active{
+    width: 100%;
+} 
 
 
 .profile_page .header{
@@ -450,6 +463,83 @@ color: #646464;
 border-bottom: 1px solid #646464;
 }
 
+.radio_section{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #646464;
+    border-bottom: 1px solid #646464;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #646464;
+
+}
+.custom_textarea{
+border: 1px solid #646464;
+border-radius: 10px;
+height: 120px;
+margin-top: 30px;
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 25px;
+color: #646464;
+}
+.dropFiles {
+    width: 100%;
+    min-height: 51px; 
+    height: 51px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #646464;
+    background: #F3F3F3;
+    border: 1px dashed #646464;
+    border-radius: 10px;
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+
+  .drop_file{
+    margin-top: 30px;
+  }
+  .highlightDropArea {
+    border: 5px #6F57EB  dashed;
+  }
+  .drop_input{
+    width: calc(100% - 30px);
+  }
+  .pin_file{
+    width: 30px;
+  }
+
+  .btn_cont button{
+    background: none;
+    border: none;
+    outline: none;
+    width: 196px;
+    height: 48px;
+    background: #FFCC4D;
+    box-shadow: 0px 2px 8px rgba(111, 87, 235, 0.15);
+    border-radius: 24px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 30px;
+  }
 
 
 
@@ -555,7 +645,7 @@ position: absolute;
 
 @media (max-width: 768px) {
     #sidebar {
-        margin-left: -250px;
+        margin-left: -310px;
     }
     #sidebar.active {
         margin-left: 0;
@@ -563,9 +653,53 @@ position: absolute;
     #sidebarCollapse span {
         display: none;
     }
+    #content{
+        width: 100%;
+    }
+    #sidebar.mobile-active {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
 
-    
 
 
+    .mobile_dashboard_top{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .mobile_content{
+       display: none !important;
+    }
+
+    .profile_page .form_content{
+        padding: 10px;
+    }
+
+    .input_field , .radio_section , .custom_textarea , .dropFiles , .profile_page .header .content p{
+        font-size: 14px;
+
+    }
+    .profile_page .header .content p{
+        margin-left: 10px;
+    }
+    .radio_section{
+        flex-direction: column;
+    }
+    .drop_input{
+        display: none;
+    }
+    .pin_file {
+        width: 100%;
+        width: 296px;
+        height: 35px;
+        background: #FFCC4D;
+        border-radius: 10px;
+    }
+    .file .bottom_label{
+        background: #FFCC4D; 
+    }
 
 }
